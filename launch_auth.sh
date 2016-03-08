@@ -2,7 +2,7 @@
 
 name=${NAME:-registry-auth}
 
-docker run -d -p 5001:5000 --restart=always --name $name \
+docker run -d -p 5001:5000 --name $name \
 	-v `pwd`/auth:/auth \
 	-e "REGISTRY_AUTH=htpasswd" \
 	-e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \

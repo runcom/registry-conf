@@ -9,5 +9,5 @@ auth:
     issuer: "auth-registry"
     rootcertbundle: /cert.pem
 http:
-    addr: 0.0.0.0:5003
+    addr: 0.0.0.0:5000
     secret: thisisasecret
