@@ -1,0 +1,13 @@
+version: 0.1
+storage:
+  filesystem:
+    rootdirectory: /var/lib/registry
+auth:
+  token:
+    realm: "http://localhost:5006/token"
+    service: "registry"
+    issuer: "auth-registry"
+    rootcertbundle: /cert.pem
+http:
+    addr: 0.0.0.0:5003
+    secret: thisisasecret
